@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Llczff Portfolio</title>
+    <meta charset="UTF-8" />
+    <meta
+      name="keywords"
+      content="Sayan Banerjee, Sayan, portfolio website, Data Analyst"
+    />
+    <meta
+      name="description"
+      content="Data Analyst portfolio website utilizing Github Pages. CDN included Typed.js and particles.js"
+    />
+    <meta name="author" content="Sayan" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Reset CSS -->
+    <link rel="stylesheet" href="styles/reset.css" />
+    <!-- Default CSS -->
+    <link rel="stylesheet" href="styles/index.css" />
+    <!-- Variables -->
+    <link rel="stylesheet" href="styles/variables.css" />
+    <!-- Animation CSS (we can defer loading since it's non-critical)-->
+    <link
+      rel="preload"
+      href="styles/animation.css"
+      as="style"
+      onload="this.onload=null;this.rel='stylesheet'"
+    />
+    <noscript><link rel="stylesheet" href="styles/animation.css" /></noscript>
+    <!-- Responsive (needed to be the last CSS import)-->
+    <link rel="stylesheet" href="styles/responsive.css" />
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+  </head>
+
+  <body>
+    <!-- navbar start -->
+    <header>
+      <a href="/" class="logo">
+        <img src="assets/LCF.png" alt="Logo" />
+      </a>
+      <button
+        id="hamburger"
+        onclick="toggleNavbar()"
+        aria-label="Navigation menu"
+      >
+        <div class="patty"></div>
+      </button>
+      <nav id="navbar">
+        <ul>
+          <li><a href="#home" class="link-btn">Home</a></li>
+          <li><a href="#about" class="link-btn">About</a></li>
+          <li><a href="#experience" class="link-btn">Experience</a></li>
+          <li><a href="#project" class="link-btn">Project</a></li>
+          <li><a href="#education" class="link-btn">Education</a></li>
+          <li><a href="#skills" class="link-btn">Skills</a></li>
+          <li><a href="#footer" class="link-btn">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <!-- navbar end -->
+
+    <!-- hero section start -->
+    <section id="home">
+      <div id="particles-js"></div>
+
+      <div class="content">
+        <h1>Sayan Banerjee</h1>
+        <p>I'm <span class="typing"></span></p>
+        <ul class="social">
+          <li>
+            <a
+              href="https://github.com/Sayan-ML"
+              target="_blank"
+              class="link-btn github"
+              aria-label="Github link"
+            >
+              <i class="fa-brands fa-github"></i>
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://www.linkedin.com/in/sayan-banerjee-0222a4214/"
+              target="_blank"
+              class="link-btn linkedin"
+              aria-label="Linkedin link"
+            >
+              <i class="fa-brands fa-linkedin-in"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <!-- hero section end -->
+
+    <main>
+      <!-- about section start -->
+      <section id="about" class="container reveal">
+        <h2>ABOUT <span>ME</span></h2>
+        <div class="content">
+          <img src="assets/WhatsApp Image 2025-07-20 at 11.47.40 AM.jpeg" alt="profile" />
+          <p>
+            I am a data analyst and data science enthusiast with a strong foundation in statistical analysis, machine learning, and deep learning. Proficient in Excel, SQL, and Power BI, I specialize in transforming data into actionable insights and building data-driven solutions. Currently pursuing a Master's in Statistics, I combine analytical rigor with practical experience to solve real-world problems. My work focuses on uncovering patterns, automating workflows, and visualizing data to support strategic decision-making across domains.
+
+
+          </p>
+        </div>
+      </section>
+      <!-- about section end -->
+
+      <!-- experience section start -->
+      <section id="experience" class="container">
+        <h2>EXPERIENCE</h2>
+        <div class="timeline">
+          <div class="checkpoint">
+            <div>
+              <h3>The Sparks Foundation</h3>
+              <h4>Data Science Intern</h4>
+              <p>Febuary 2024 - April 2024</p>
+            </div>
+          </div>
+          <div class="checkpoint">
+            <div>
+              <h3>Chegg Inc.</h3>
+              <h4>Subject Matter Expert</h4>
+              <p>October 2022 - December 2024</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- experience section end -->
+
+      <!-- project section start -->
+      <section id="project" class="container reveal">
+  <h2>PROJECTS</h2>
+  <div class="project-grid">
+
+    <!-- Repeat this block for each project -->
+    <a class="card" href="https://github.com/Sayan-ML/Swiggy_delivery_time_prediction" target="_blank">
+      <img src="assets/1_AfdumJWfs0EnWU4gqmhbGQ.png" alt="Swiggy Delivery Time Prediction" />
+      <div class="overlay">
+        <div>
+          <p>Built a high-performance regression model to predict delivery times using an ensemble of XGBoost and LightGBM, achieving an R² score of 0.88. This end-to-end project included:
+
+Data Preprocessing: Handled missing values using multiple imputation strategies; selected dropping missing entries for optimal baseline results. Applied standardization and encoding techniques.
+
+Exploratory Data Analysis: Identified key delivery drivers, outliers, and skewed variables using distribution plots, correlation heatmaps, and pairwise analysis.
+
+Feature Selection: Compared Forward Selection, RFE, and VIF; retained all features due to positive contribution to model performance.
+
+Modeling & Optimization: Evaluated XGBoost, LightGBM, Random Forest, SVR, and Linear Regression. Final model used Voting Regressor with Bayesian hyperparameter tuning via Optuna.
+
+🔥 Result: Ensemble model significantly outperformed individual learners with a strong R² of 0.88.</p>
+          <i class="fa-solid fa-arrow-right"></i>
+        </div>
+      </div>
+      <h3></h3>
+    </a>
+
+    <a class="card" href="https://github.com/Sayan-ML/Multiple_Disease_Prediction" target="_blank">
+      <img src="assets/maxresdefault.jpg" alt="Multiple Disease Prediction System" />
+      <div class="overlay">
+        <div>
+          <p>Developed a full-stack web-based diagnostic tool that predicts five critical diseases using both clinical data and medical imaging. Integrated machine learning for tabular predictions and deep learning (CNNs) for image classification. Built with Scikit-learn, TensorFlow/Keras, and Streamlit.
+
+🧠 Capabilities:
+
+Heart, Diabetes, Kidney Disease: Real-time predictions using Random Forest, SVM, Decision Trees.
+
+Pneumonia & Diabetic Retinopathy: Image-based detection via CNNs trained on Kaggle datasets.
+
+User Interface: Tab-based navigation, responsive UI, instant feedback with model confidence scores.
+
+🔬 Key Features:
+
+Tabular input for clinical diseases; image upload for vision-based diagnostics
+
+Preprocessing pipelines for both structured and unstructured data
+
+Streamlined model inference and deployment via Streamlit
+
+Modular code design with expandability for additional diseases</p>
+          <i class="fa-solid fa-arrow-right"></i>
+        </div>
+      </div>
+      <h3></h3>
+    </a>
+
+    <!-- Project 3 to 6... -->
+    <a class="card" href="https://github.com/Sayan-ML/Churn-prediction-using-SurvivalAnalysis" target="_blank">
+      <img src="assets/1_WZdoYPpmiIk1AcPQ1YHWug.png" alt="Customer Churn Prediction" />
+      <div class="overlay">
+        <div>
+          <p>Analyzed customer churn behavior by combining Survival Analysis and ML-based classification techniques. Used Kaplan-Meier curves and a Stratified Cox Proportional Hazards model to uncover time-to-churn patterns and covariate effects over time.
+
+🧪 Key Steps:
+
+Performed deep EDA to identify churn drivers across segments
+
+Modeled survival probabilities and risk using KM curves and Cox models
+
+Trained multiple classifiers (e.g., XGBoost) to predict churn labels
+
+🎯 Results: Achieved 87% accuracy and 82% F1 score with XGBoost classifier
+
+</p>
+          <i class="fa-solid fa-arrow-right"></i>
+        </div>
+      </div>
+      <h3></h3>
+    </a>
+
+    <a class="card" href="https://github.com/Sayan-ML/Revenue-Leakage-Optimization-CSA" target="_blank">
+      <img src="assets/67fc8947b065e2c8a66eb105_Blog Image.png" alt="Optimizing Revenue Leakage in Hospitality Sector" />
+      <div class="overlay">
+        <div>
+          <p>Developed a data-driven solution to identify revenue leakages and improve profitability in the hospitality sector. Leveraged advanced SQL for multi-source data analysis focusing on KPIs like RevPAR, ADR, occupancy%, and cancellation rates.
+
+Built interactive Power BI dashboards to uncover booking and channel trends
+
+Proposed data-backed pricing & operational strategies
+
+Demonstrated clear potential for revenue uplift and cost control</p>
+          <i class="fa-solid fa-arrow-right"></i>
+        </div>
+      </div>
+      <h3></h3>
+    </a>
+
+    <a class="card" href="https://github.com/Sayan-ML/Sentiment_Product-Recommendation" target="_blank">
+      <img src="assets/27. Sentiment Analysis (using LSTMs) - Deep Learning _  Live Project Training.png" alt="Sentiment Based Product Recommendations" />
+        <div class="overlay">
+          <div>
+          <p>Built a complete end-to-end recommendation system combining sentiment analysis and user behavior to deliver personalized product suggestions.
+
+Achieved 94% sentiment classification accuracy using a Stacking Classifier (Random Forest, XGBoost, LightGBM)
+
+Applied robust NLP preprocessing: POS-aware lemmatization, TF-IDF vectorization
+
+Developed a hybrid recommendation engine using sentiment scores + user-product interaction
+
+Deployed via Streamlit with two core functionalities:
+🔹 Review Sentiment Prediction
+🔹 Top-5 Product Recommendations for a given user</p>
+          <i class="fa-solid fa-arrow-right"></i>
+        </div>
+      </div>
+      <h3></h3>
+    </a>
+
+    <a class="card" href="https://github.com/yourusername/project6" target="_blank">
+  <img src="assets/1_TTIc0q3i0c3b2y6mpzMtSQ.png" alt="Stock Price Forecasting Using Time Series Models" />
+  <div class="overlay">
+    <div>
+      <p>Stock Price Forecasting Using Time Series Models</p>
+      <i class="fa-solid fa-arrow-right"></i>
+    </div>
+  </div>
+  <h3></h3>
+</a>
+
+      <!-- education section start -->
+      <section id="education" class="container reveal">
+  <h2>EDUCATION</h2>
+
+  <div class="content">
+    <p>
+      Pursuing a
+      <span class="major">
+        Master's in Statistics and Computing at Banaras Hindu University (BHU)
+      </span>
+    </p>
+    <p class="year-taken">August 2024 — Present</p>
+  </div>
+
+  <div class="content">
+    <p>
+      Graduated from Sister Nivedita University with a
+      <span class="major">
+        Bachelor of Science in Statistics(Hons)
+      </span>
+    </p>
+    <p class="year-taken">August 2021 — June 2024</p>
+  </div>
+</section>
+
+      <!-- education section end -->
+
+      <!-- skills section start -->
+      <section id="skills" class="container">
+        <h2>SKILLS</h2>
+
+        <div class="content">
+          <!-- <figure class="skill">
+            <img src="assets/skills/react.svg" alt="React" />
+           <figcaption>React</figcaption>
+          </figure> -->
+        </div>
+      </section>
+      <!-- skills section end -->
+    </main>
+
+    <!-- footer section start -->
+    <footer id="footer">
+      <div class="content">
+        <h2>Sayan's Portfolio</h2>
+        <p>Connect with me for more information.</p>
+      </div>
+
+      <ul class="social">
+        <li>
+          <a
+            href="https://github.com/Sayan-ML"
+            target="_blank"
+            class="link-btn"
+            aria-label="Github link"
+          >
+            <i class="fa-brands fa-github"></i>
+          </a>
+        </li>
+        <li>
+          <a
+            href="https://www.linkedin.com/in/sayan-banerjee-0222a4214/"
+            target="_blank"
+            class="link-btn"
+            aria-label="Linkedin link"
+          >
+            <i class="fa-brands fa-linkedin"></i>
+          </a>
+        </li>
+      </ul>
+
+      <div class="contact">
+        <h3>Contact</h3>
+        <ul>
+          <li>
+            <i class="fa fa-envelope"></i>
+            <span>sayan.banerjee@bhu.ac.in</span>
+          </li>
+          <li>
+            <i class="fa fa-phone"></i>
+            <span>+91 9088932871</span>
+          </li>
+          <li>
+            <i class="fa fa-map-marked-alt"></i>
+            <span>Kolkata,West Bengal,India</span>
+          </li>
+        </ul>
+      </div>
+    </footer>
+    <!-- footer section end -->
+
+    <!-- ======================== Scripts ======================== -->
+
+    <!-- Particle JS -->
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+
+    <!-- Typed.js -->
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+    <!-- JS source -->
+    <script src="index.js"></script>
+  </body>
+</html>
