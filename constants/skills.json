@@ -1,0 +1,42 @@
+[
+  {
+    "name": "Python",
+    "image": "assets/skills/python.svg",
+    "height": "50px"
+  },
+  {
+    "name": "Excel",
+    "image": "assets/skills/microsoft-excel-icon.svg",
+    "height": "50px"
+  },
+  {
+    "name": "PowerBI",
+    "image": "assets/skills/power-bi-icon.svg",
+    "height": "50px"
+  },
+  {
+    "name": "R",
+    "image": "assets/skills/r-programming-language-icon.svg",
+    "height": "50px"
+  },
+  {
+    "name": "Streamlit",
+    "image": "assets/skills/Streamlit.svg",
+    "height": "50px"
+  },
+  {
+    "name": "Git",
+    "image": "assets/skills/git.svg",
+    "height": "40px"
+  },
+  {
+    "name": "ML",
+    "image": "assets/skills/artificial-intelligence-deep-learning-22107.svg",
+    "height": "60px"
+  },
+  {
+    "name": "Statistics",
+    "image": "assets/skills/bar-chart-675.svg",
+    "height": "50px"
+  }
+]
